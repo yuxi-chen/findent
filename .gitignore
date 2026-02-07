@@ -26,3 +26,38 @@
 *.exe
 *.out
 *.app
+findent/src/findent
+
+# Autotools / Configure generated files
+Makefile
+config.h
+config.log
+config.status
+stamp-h1
+.deps/
+.dirstamp
+
+# Findent specific generated files
+*.inc
+findent/src/lexer.cpp
+findent/src/parser.cpp
+findent/src/parser.hpp
+
+# Test artifacts
+findent/test/*.ref
+findent/test/init.sh
+findent/test/doit
+findent/test/test-compile.sh
+findent/test/*.try.f.ref
+
+# Generated scripts and docs
+findent/scripts/wfindent
+findent/src/env.sh
+findent/src/findent.1
+
+# Generated test files
+findent/test/postlude
+findent/test/prelude
+findent/test/esope.f
+findent/test/prog*.f
+

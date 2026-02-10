@@ -720,7 +720,7 @@ void Fortran::indent_and_output() {
           break;
         case DO:
           Cur_indent = top_indent();
-          if (do_indent_handled_this_line)
+          if (do_indent_handled_this_line && !FLAGS.cascade_do)
             push_indent(Cur_indent);
           else {
             push_indent(Cur_indent + FLAGS.do_indent);
